@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Raleway&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --raleway: "Raleway", sans-serif;
+  --lato: "Lato", sans-serif;
+  --green: #23332f;
+  --beige: #debc90;
+  --black: #1d1d1b;
+  --grey: #6c6c6c;
+  --header-height-desktop: 100px;
+  --header-height-mobile: 56px;
+}
+
+h1 {
+  font-size: 32px;
+  font-family: var(--raleway);
+}
+
+p {
+  font-size: 20px;
+  font-family: var(--lato);
+}
+
+.homepage__global,
+.our__collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 2000px !important;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
